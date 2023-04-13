@@ -81,7 +81,7 @@ func main() {
 	scenarioMap := make(map[int]Scenario)
 	scenarioMap[1] = Scenario{Reason: "annual exam", Age: []int{36}, Insurance: []string{"medicare"}, Orders: "folic acid, complete blood count"}
 	scenarioMap[2] = Scenario{Reason: "annual exam", Age: []int{41, 9999}, Insurance: []string{"medicare", "aetna"}, Orders: "complete blood count, cancer screen"}
-	scenarioMap[3] = Scenario{Reason: "annual exam", Age: []int{20, 40}, Insurance: []string{"aetna"}, Orders: "complete blood count, diabetes monitoring, cancer screen"}
+	scenarioMap[3] = Scenario{Reason: "annual exam", Age: []int{20, 40}, Insurance: []string{"!medicare", "aetna"}, Orders: "complete blood count, diabetes monitoring, cancer screen"}
 	scenarioMap[4] = Scenario{Reason: "post operation hip", Age: []int{0, 9999}, Insurance: []string{"medicare", "aetna"}, Orders: "xray hip, stitch removal"}
 	fingerprint := Fingerprint{Reason: "annual exam", Age: 36, Insurance: "medicare"}
 	orders := requestedOrders(fingerprint, scenarioMap)
